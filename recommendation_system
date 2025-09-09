@@ -1,0 +1,21 @@
+digraph {
+	A [label="Data Pre-processing" fillcolor=lightblue shape=box style=filled]
+	B [label="User-Item Rating Matrix [M × N]" fillcolor=lightblue shape=box style=filled]
+	C [label="Hyperparameter Tuning
+& Data Pruning" fillcolor=lightgrey shape=box style=filled]
+	D [label="Matrix Factorization" fillcolor=lightgrey shape=box style=filled]
+	E [label="Similarity Calculation" fillcolor=lightgrey shape=box style=filled]
+	F [label="Singular Value Decomposition" fillcolor=lightblue shape=box style=filled]
+	G [label="K-Nearest Neighbors" fillcolor=lightblue shape=box style=filled]
+	H [label="Recommendation Model" fillcolor=lightgrey shape=box style=filled]
+	I [label=Recommendations fillcolor=lightgreen shape=box style=filled]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> H
+	H -> F
+	H -> G
+	F -> I
+	G -> I
+}
