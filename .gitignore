@@ -1,0 +1,9 @@
+# fichiers et dossiers liés à l'environnement de développement
+.vscode/
+# fichiers du cache de python
+__pycache__/
+# fichiers temporaire de l'environnement virtuel python
+.venv/
+venv/
+# memoire en word
+*.docx
